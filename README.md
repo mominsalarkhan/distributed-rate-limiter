@@ -2,7 +2,7 @@
 
 A horizontally scalable API rate limiter built with FastAPI and Redis, implementing a sliding window algorithm to enforce request quotas across multiple service instances.
 
-## 🚀 Performance Metrics
+## Performance Metrics
 Tested with Locust under realistic load conditions:
 
 - **Throughput**: 2,000+ requests/second
@@ -40,7 +40,7 @@ Tested with Locust under realistic load conditions:
             └───────────┘
 ```
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Backend**: FastAPI (Python)
 - **Database**: Redis (in-memory key-value store)
@@ -48,7 +48,7 @@ Tested with Locust under realistic load conditions:
 - **Containerization**: Docker, Docker Compose
 - **Load Testing**: Locust
 
-## ✨ Features
+## Features
 
 - **Sliding Window Algorithm**: Accurate rate limiting using Redis sorted sets
 - **Distributed Architecture**: Shared state across multiple API instances
@@ -57,7 +57,7 @@ Tested with Locust under realistic load conditions:
 - **Per-User Limits**: Independent rate limits for each user
 - **Real-time Stats**: Query current usage and remaining quota
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 - Docker and Docker Compose
@@ -81,7 +81,7 @@ This starts:
 - Redis (port 6379)
 - Nginx load balancer (port 80)
 
-## 🧪 Testing
+## Testing
 
 ### Manual Testing
 ```bash
