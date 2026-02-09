@@ -3,11 +3,20 @@
 A horizontally scalable API rate limiter built with FastAPI and Redis, implementing a sliding window algorithm to enforce request quotas across multiple service instances.
 
 ## 🚀 Performance Metrics
+Tested with Locust under realistic load conditions:
 
 - **Throughput**: 2,000+ requests/second
-- **Latency**: <50ms P95, ~15-20ms median
-- **Concurrency**: Tested with 50-100 concurrent users
+- **Latency (P50)**: ~15-20ms
+- **Latency (P95)**: ~40-50ms
+- **Latency (P99)**: <60ms
+- **Concurrent Users**: 100+
 - **Rate Limit Accuracy**: >99%
+
+### Load Test Results
+
+![Performance Metrics](screenshots/performance-metrics.png)
+
+*Load testing with 50-100 concurrent users showing consistent throughput and low latency*
 
 ## 🏗️ Architecture
 ```
